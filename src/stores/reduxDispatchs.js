@@ -1,8 +1,8 @@
 import { bindActionCreators } from 'redux'
-import * as exampleActions from './modules/example/actions'
+import { exampleRequest } from './modules/example/actions'
 
 const actions = {
-    ...exampleActions,
+    exampleRequest,
 }
 
 export const buildMapStateToProps = (state, fields = null) => {
@@ -13,10 +13,7 @@ export const buildMapStateToProps = (state, fields = null) => {
     }
 
     return fields.reduce(
-        (result, current) => ({
-            ...result,
-            [current]: state[current],
-        }),
+        (result, current) => ({ ...result, [current]: state[current] }),
         {}
     )
 }

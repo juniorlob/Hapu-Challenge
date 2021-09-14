@@ -9,8 +9,12 @@ import withConnect from '../../stores/withConnect'
 
 // Page jsx component
 import Home from './Home'
+import { HomeContainerProps } from './Home.interface'
 
-const HomeContainer = ({ storeExample, exampleRequest }: any): JSX.Element => {
+const HomeContainer = ({
+    storeExample,
+    exampleRequest,
+}: HomeContainerProps): JSX.Element => {
     // ComponentDidMount alike
     useEffect(() => {
         exampleRequest({})
