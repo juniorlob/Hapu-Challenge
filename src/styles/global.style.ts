@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-export default createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
  
   * {
     margin: 0;
@@ -27,5 +27,6 @@ export default createGlobalStyle`
     cursor: pointer;
   }
   
-
 `
+
+export default GlobalStyle

@@ -20,9 +20,9 @@ const colors = {
     primary: '#00A870',
     secondary: '#5E20A4',
     grey: {
-        0: '#000000',
-        24: '#3D3D3D',
-        88: '#DFDFDF',
+        '0': '#000000',
+        '24': '#3D3D3D',
+        '88': '#DFDFDF',
     },
     white: '#FFFFFF',
     warmWhite: '#F2F2F2',
@@ -32,6 +32,8 @@ const lightTheme = {
     ...theme,
     palette: {
         ...colors,
+        iconColor: colors.grey['88'],
+        iconHoverColor: colors.secondary,
     },
 }
 
