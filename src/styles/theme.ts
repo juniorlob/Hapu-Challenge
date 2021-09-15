@@ -32,8 +32,9 @@ const lightTheme = {
     ...theme,
     palette: {
         ...colors,
+        bgColor: colors.warmWhite,
         iconColor: colors.grey['88'],
-        iconHoverColor: colors.secondary,
+        iconSecondaryColor: colors.secondary,
     },
 }
 

@@ -1,6 +1,6 @@
 export type IconProps = {
-    height?: string | number
-    width?: string | number
+    h?: string | number
+    w?: string | number
     color?: string
     hoverColor?: string
 }
