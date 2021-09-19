@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { palette, theme } from 'styled-tools'
 
 const GlobalStyle = createGlobalStyle`
  
@@ -14,8 +15,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-
-    -webkit-font-smothing: antialiased !important;
+    background-color: ${palette('bgBody')};
+    -webkit-font-smoothing: antialiased;
   }
 
   body, input, button {
@@ -26,6 +27,7 @@ const GlobalStyle = createGlobalStyle`
   button {
     cursor: pointer;
   }
+  ${theme('components.globalStyle')}
   
 `
 

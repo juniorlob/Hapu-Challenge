@@ -1,4 +1,4 @@
-import { cloneElement } from 'react'
+import Navbar from '../../components/Navbar'
 import { LayoutWrapperProps } from './LayoutWrapper.interface'
 
 import { LayoutWrapperContainer } from './LayoutWrapper.style'
@@ -12,6 +12,9 @@ const LayoutWrapper = ({ children }: LayoutWrapperProps): JSX.Element => (
     // Some logic
 
     // High Order Component that wraps the page layout
-    <LayoutWrapperContainer>{cloneElement(children)}</LayoutWrapperContainer>
+    <LayoutWrapperContainer>
+        <Navbar />
+        {children}
+    </LayoutWrapperContainer>
 )
 export default LayoutWrapper

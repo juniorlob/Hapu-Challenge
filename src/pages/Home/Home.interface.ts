@@ -1,10 +1,8 @@
-import { VoidFunctionComponent } from 'react'
-
-export type HomeProps = {
+export interface HomeProps {
     currentExample: string
 }
 
-type StoreExampleProps = {
+export interface StoreExampleProps {
     loaded: boolean
     currentExample: string
     currentExamples?: Array<number | string>
@@ -15,7 +13,7 @@ type StoreExampleProps = {
     success: string
 }
 
-export type HomeContainerProps = {
+export interface HomeContainerProps {
     storeExample: StoreExampleProps
     exampleRequest: any
 }

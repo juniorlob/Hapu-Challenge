@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-
+import LayoutWrapper from '../../hocs/LayoutWrapper/LayoutWrapper'
 /* NOTE
 	This component is responsable for the logic on the component
 */
@@ -21,7 +21,11 @@ const HomeContainer = ({
     }, [])
     const { currentExample } = storeExample
 
-    return <Home currentExample={currentExample} />
+    return (
+        <LayoutWrapper>
+            <Home currentExample={currentExample} />
+        </LayoutWrapper>
+    )
 }
 
 // com seleção de store

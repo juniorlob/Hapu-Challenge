@@ -1,3 +1,4 @@
+import { BrowserRouter as Router } from 'react-router-dom'
 import { Provider } from 'react-redux'
 
 // Global Style
@@ -6,8 +7,8 @@ import { ThemeProvider } from 'styled-components'
 import GlobalStyle from './styles/global.style'
 
 import stores from './stores'
-import Home from './pages/Home'
 import lightTheme from './styles/theme'
+import Routes from './routes'
 
 const DEFAULT_THEME = lightTheme
 
@@ -17,10 +18,12 @@ const App = (): JSX.Element => {
 
     return (
         <Provider store={stores}>
-            <ThemeProvider theme={theme}>
-                <GlobalStyle />
-                <Home />
-            </ThemeProvider>
+            <Router>
+                <ThemeProvider theme={theme}>
+                    <Routes />
+                    <GlobalStyle />
+                </ThemeProvider>
+            </Router>
         </Provider>
     )
 }
