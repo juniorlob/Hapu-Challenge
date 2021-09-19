@@ -11,7 +11,7 @@ export const ContainerWrapper = styled.div`
         `,
     })}
     @media screen and (${theme('breakpoint.sm.min')}) {
-        max-width: 60rem;
+        max-width: 80rem;
     }
     &:brefore,
     &:after {

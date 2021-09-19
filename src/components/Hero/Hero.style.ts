@@ -7,9 +7,6 @@ export const HeroWrapper = styled.div`
     position: relative;
     z-index: 0;
 
-    height: 616px;
-    display: flex;
-
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
@@ -19,15 +16,20 @@ export const HeroWrapper = styled.div`
             #7e49c3 39.43%,
             #5912ac 86.02%
         ),
-        ${({ bgImg }: HeroStyleProps) => `url(${bgImg})`};
+        ${({ bgImg }: HeroStyleProps) => `url(${bgImg})` || ''};
 
     color: ${palette('heroTextColor')};
+
+    height: 616px;
+    display: flex;
 `
-export const HeroContainer = styled(Container)``
+export const HeroContainer = styled(Container)`
+    max-width: 70rem;
+`
 
 export const HeroGrid = styled.div`
     height: 100%;
-
+    padding-top: ${theme('spacing.lg')};
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
@@ -52,5 +54,17 @@ export const HeroGrid = styled.div`
     & > img {
         width: auto;
         height: fit-content;
+    }
+    a {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        color: ${palette('linkColorLight')};
+        transition: ${theme('transition')};
+        &:hover {
+            opacity: 0.8;
+        }
     }
 `

@@ -68,3 +68,7 @@ export const MainMenu = styled.ul<MainMenuProps>`
     );
     gap: 32px;
 `
+
+export const PositionRelative = styled.div`
+    position: relative;
+`

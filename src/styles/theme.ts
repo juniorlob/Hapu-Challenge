@@ -1,4 +1,4 @@
-import { darken, lighten } from 'polished'
+import { darken } from 'polished'
 
 const theme = {
     fontFamily: "'Inter', sans-serif",
@@ -104,6 +104,7 @@ const lightTheme = {
         bgButtonPrimaryDisabled: darken(0.01, colors.primary),
         heroTextColor: colors.white,
         navbarTextColor: colors.white,
+        linkColorLight: colors.white,
     },
     breakpoint,
     components,
