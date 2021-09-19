@@ -3,14 +3,14 @@ import Button from '../Button'
 import Container from '../Container'
 import { HapuIcon } from '../Icons/HapuIcon'
 import { NavbarProps, NavItems } from './Navbar.interface'
-import { Brand, H5, MainMenu, Nav, NavbarWrapper } from './Navbar.style'
+import { Brand, MainMenu, Nav, NavbarWrapper } from './Navbar.style'
 
 const NavLink = ({ children, link }: NavItems): JSX.Element => (
     <Link to={link}> {children}</Link>
 )
 
 const Navbar = ({ navItems }: NavbarProps): JSX.Element => (
-    <Container>
+    <Container position="relative">
         <NavbarWrapper>
             <NavLink link="#">
                 <Brand>
@@ -28,10 +28,10 @@ const Navbar = ({ navItems }: NavbarProps): JSX.Element => (
                     ))}
                 </MainMenu>
                 <div>
-                    <Button size="lg">
-                        <H5>Become a Nanny Share Host</H5>
+                    <Button size="md">Become a Nanny Share Host</Button>
+                    <Button link href="#">
+                        Sign In
                     </Button>
-                    <H5>Sign In</H5>
                 </div>
             </Nav>
         </NavbarWrapper>

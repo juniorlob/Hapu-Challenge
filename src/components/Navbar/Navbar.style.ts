@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { palette } from 'styled-tools'
+import { palette, theme } from 'styled-tools'
 import { MainMenuProps } from './Navbar.interface'
 
 export const NavbarWrapper = styled.header`
@@ -9,9 +9,15 @@ export const NavbarWrapper = styled.header`
     z-index: 100;
     gap: 40px;
     color: ${palette('navbarTextColor')};
+    font-size: ${theme('fontSize.md')};
+    font-weight: 500;
 
     a {
         color: ${palette('navbarTextColor')};
+        text-decoration: none;
+        &:hover {
+            opacity: 0.7;
+        }
     }
 `
 
@@ -30,7 +36,6 @@ export const MenuButton = styled.button`
     color: ${palette('white')};
     padding: 22px 12px 21px 12px;
 `
-export const H5 = styled.h5``
 
 export const RightItems = styled.div`
     display: grid;

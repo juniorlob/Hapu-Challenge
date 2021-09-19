@@ -7,7 +7,7 @@ export const ButtonEl = styled.button`
     border: 0;
     outline: none;
     cursor: pointer;
-    font-weight: ${theme('fontWeight.medium')};
+    font-weight: 400;
     color: ${ifProp(
         'secondary',
         palette('colorButtonSecondary'),

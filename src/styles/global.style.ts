@@ -26,7 +26,9 @@ const GlobalStyle = createGlobalStyle`
 
   button {
     cursor: pointer;
+    
   }
+
   ${theme('components.globalStyle')}
   
 `

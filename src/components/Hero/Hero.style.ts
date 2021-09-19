@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { palette, theme } from 'styled-tools'
+import Container from '../Container'
 import { HeroStyleProps } from './Hero.interface'
 
 export const HeroWrapper = styled.div`
@@ -22,6 +23,8 @@ export const HeroWrapper = styled.div`
 
     color: ${palette('heroTextColor')};
 `
+export const HeroContainer = styled(Container)``
+
 export const HeroGrid = styled.div`
     height: 100%;
 
@@ -37,8 +40,12 @@ export const HeroGrid = styled.div`
         h1 {
             font-size: ${theme('fontSize.title.h1')};
             line-height: 48px;
+            font-weight: 500;
         }
-        p {
+        h5 {
+            font-size: ${theme('fontSize.title.lg')};
+            line-height: 24px;
+            font-weight: 400;
         }
     }
 

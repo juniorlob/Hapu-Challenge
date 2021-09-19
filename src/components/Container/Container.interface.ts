@@ -1,5 +1,8 @@
 import { ReactNode } from 'react'
 
-export interface ContainerProps {
+type ContainerPropTypes = {
+    position?: 'relative'
+}
+export interface ContainerProps extends ContainerPropTypes {
     children: ReactNode
 }

@@ -1,12 +1,12 @@
 import { ReactNode } from 'react'
 
-type PropTypes = {
-    size: 'sm' | 'md' | 'lg'
+type ButtonPropTypes = {
+    size?: 'sm' | 'md' | 'lg'
     secondary?: boolean
 }
 
-export interface ButtonProps extends PropTypes {
+export interface ButtonProps extends ButtonPropTypes {
     link?: boolean
-    style?: React.CSSProperties
+    href?: string
     children: ReactNode
 }

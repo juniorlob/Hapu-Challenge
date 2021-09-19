@@ -1,6 +1,8 @@
+import { darken, lighten } from 'polished'
+
 const theme = {
     fontFamily: "'Inter', sans-serif",
-    fontWeight: { regular: 400 },
+
     fontSize: {
         body: '18px',
         title: {
@@ -23,9 +25,9 @@ const theme = {
         sm: '0px 1px 1px rgba(0, 0, 0, 0.2)',
     },
     borderRadius: {
-        sm: '.2rem',
+        sm: '.222rem',
     },
-    transition: 'all 0.3s ease',
+    transition: 'all 0.2s ease',
 }
 
 const colors = {
@@ -40,6 +42,7 @@ const colors = {
     white: '#FFFFFF',
     warmWhite: '#F2F2F2',
 }
+
 const size = {
     xs: '20rem',
     sm: '30rem',
@@ -64,6 +67,29 @@ const components = {
             color: colors.grey['24'],
         },
     },
+    Button: {
+        default: {
+            borderRadius: theme.borderRadius.sm,
+            fontWeight: 500,
+        },
+        sizes: {
+            sm: {
+                fontSize: theme.fontSize.xs,
+                paddingLeft: theme.spacing.sm,
+                paddingRight: theme.spacing.sm,
+            },
+            md: {
+                fontSize: theme.fontSize.md,
+                paddingLeft: theme.spacing.lg,
+                paddingRight: theme.spacing.lg,
+            },
+            lg: {
+                fontSize: theme.fontSize.xs,
+                paddingLeft: theme.spacing.sm,
+                paddingRight: theme.spacing.sm,
+            },
+        },
+    },
 }
 
 const lightTheme = {
@@ -74,6 +100,8 @@ const lightTheme = {
         iconColor: colors.grey['88'],
         iconSecondaryColor: colors.secondary,
         bgButtonPrimary: colors.primary,
+        bgButtonPrimaryHover: colors.brandBg,
+        bgButtonPrimaryDisabled: darken(0.01, colors.primary),
         heroTextColor: colors.white,
         navbarTextColor: colors.white,
     },
