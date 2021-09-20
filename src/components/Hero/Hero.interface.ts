@@ -6,13 +6,13 @@ type heroInnerText = {
     title: string
     text: string
 }
-type heroImgHero = {
+type imgHero = {
     img: string
     alt: string
 }
 
 export interface HeroProps {
     bgHero?: string
-    imgHero?: heroImgHero
+    imgHero?: imgHero
     content: heroInnerText
 }

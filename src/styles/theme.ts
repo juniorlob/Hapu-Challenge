@@ -35,12 +35,12 @@ const colors = {
     brandBg: '#00C88C',
     secondary: '#5E20A4',
     grey: {
-        '0': '#000000',
-        '24': '#3D3D3D',
-        '88': '#DFDFDF',
+        0: '#000000',
+        24: '#3D3D3D',
+        88: '#DFDFDF',
     },
     white: '#FFFFFF',
-    warmWhite: '#F2F2F2',
+    warmWhite: '#FAF9F7',
 }
 
 const size = {
@@ -71,7 +71,9 @@ const components = {
         default: {
             borderRadius: theme.borderRadius.sm,
             fontWeight: 500,
+            color: colors.white,
         },
+        link: { fontWeight: 500 },
         sizes: {
             sm: {
                 fontSize: theme.fontSize.xs,
@@ -105,6 +107,7 @@ const lightTheme = {
         heroTextColor: colors.white,
         navbarTextColor: colors.white,
         linkColorLight: colors.white,
+        colorGrey88: colors.grey['88'],
     },
     breakpoint,
     components,

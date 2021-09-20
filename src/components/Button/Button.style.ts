@@ -75,7 +75,7 @@ export const ButtonEl = styled.button`
 `
 
 export const Link = styled.a`
-    color: ${palette('textLink')};
+    /* color: ${palette('textLink')}; */
     transition: ${theme('transition')};
     cursor: pointer;
 
