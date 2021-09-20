@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import { palette, theme } from 'styled-tools'
-import { HeroStyleProps } from './Hero.interface'
+import { BgHero } from './Hero.interface'
 
-export const HeroWrapper = styled.div`
+export const HeroWrapper = styled.div<BgHero>`
     position: relative;
     z-index: 0;
 
@@ -15,15 +15,22 @@ export const HeroWrapper = styled.div`
             #7e49c3 39.43%,
             #5912ac 86.02%
         ),
-        ${({ bgImg }: HeroStyleProps) => `url(${bgImg})` || ''};
+        ${({ bgImg }: BgHero) => (bgImg ? `url(${bgImg.md})` : '')};
 
     color: ${palette('heroTextColor')};
 
     height: 616px;
     display: flex;
 
-    @media (${theme('breakpoint.md.max')}) {
+    @media (${theme('breakpoint.sm.max')}) {
         height: 540px;
+        background-image: linear-gradient(
+                314.72deg,
+                #c86dd7 -1.5%,
+                #7e49c3 39.43%,
+                #5912ac 86.02%
+            ),
+            ${({ bgImg }: BgHero) => (bgImg ? `url(${bgImg.xs})` : '')};
     }
 `
 
@@ -35,8 +42,13 @@ export const HeroGrid = styled.div`
     justify-items: center;
     align-items: center;
     margin-top: auto;
+    grid-column-gap: ${theme('spacing.xs')};
 
     @media (${theme('breakpoint.md.max')}) {
+        grid-template-columns: 1fr 0.85fr;
+    }
+
+    @media (${theme('breakpoint.sm.max')}) {
         grid-template-columns: 1fr;
         text-align: center;
     }
@@ -44,7 +56,7 @@ export const HeroGrid = styled.div`
     & > div {
         display: grid;
         grid-row-gap: ${theme('spacing.lg')};
-        @media (${theme('breakpoint.md.max')}) {
+        @media (${theme('breakpoint.sm.max')}) {
             margin-top: auto;
             margin-bottom: ${theme('spacing.2xxl')};
         }
@@ -62,7 +74,7 @@ export const HeroGrid = styled.div`
             font-size: ${theme('fontSize.title.lg')};
             line-height: 24px;
             font-weight: 400;
-            @media (${theme('breakpoint.md.max')}) {
+            @media (${theme('breakpoint.sm.max')}) {
                 line-height: ${theme('lineHeight.xl')};
             }
         }
@@ -71,7 +83,8 @@ export const HeroGrid = styled.div`
     & > img {
         width: auto;
         height: fit-content;
-        @media (${theme('breakpoint.md.max')}) {
+        max-width: 100%;
+        @media (${theme('breakpoint.sm.max')}) {
             display: none;
         }
     }
@@ -86,7 +99,7 @@ export const HeroGrid = styled.div`
         &:hover {
             opacity: 0.8;
         }
-        @media (${theme('breakpoint.md.max')}) {
+        @media (${theme('breakpoint.sm.max')}) {
             margin-top: ${theme('spacing.xl')};
         }
     }

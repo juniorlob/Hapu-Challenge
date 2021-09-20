@@ -1,7 +1,3 @@
-export interface HeroStyleProps {
-    bgImg?: string
-}
-
 type heroInnerText = {
     title: string
     text: string
@@ -11,8 +7,17 @@ type imgHero = {
     alt: string
 }
 
+export type BgHeroImg = {
+    xs?: string
+    md?: string
+}
+
+export interface BgHero extends BgHeroImg {
+    bgImg?: BgHeroImg
+}
+
 export interface HeroProps {
-    bgHero?: string
+    bgHero?: BgHero
     imgHero?: imgHero
     content: heroInnerText
 }

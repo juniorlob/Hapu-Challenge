@@ -2,7 +2,7 @@ import Hero from './Hero'
 
 const HeroContainer = (): JSX.Element => {
     const heroContent = {
-        bgHero: '/bg-header.png',
+        bgHero: { xs: '/bg-header-xs.png', md: '/bg-header.png' },
         imgHeader: {
             img: '/img-header.png',
             alt: 'Card with jane and Kane connected by Nanny share',

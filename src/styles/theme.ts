@@ -51,6 +51,7 @@ const colors = {
 }
 
 const size = {
+    '2sm': '12rem',
     xs: '20rem',
     sm: '30rem',
     md: '48rem',
