@@ -12,6 +12,7 @@ export const Notice = styled.div`
     justify-content: center;
     align-items: center;
     gap: ${theme('spacing.lg')};
+    font-size: ${theme('fontSize.md')};
     span {
         margin-left: ${theme('spacing.sm')};
     }

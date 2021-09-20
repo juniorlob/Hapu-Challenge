@@ -6,13 +6,14 @@ import { NavbarProps, NavItems } from './Navbar.interface'
 import {
     Brand,
     MainMenu,
+    MenuLinks,
     Nav,
     NavbarWrapper,
     PositionRelative,
 } from './Navbar.style'
 
 const NavLink = ({ children, link }: NavItems): JSX.Element => (
-    <Link to={link}> {children}</Link>
+    <MenuLinks to={link}> {children}</MenuLinks>
 )
 
 const Navbar = ({ navItems }: NavbarProps): JSX.Element => (
@@ -41,7 +42,7 @@ const Navbar = ({ navItems }: NavbarProps): JSX.Element => (
                     </MainMenu>
                     <div>
                         <Button size="md">Become a Nanny Share Host</Button>
-                        <Button link href="#">
+                        <Button link to="#" btnColor="white">
                             Sign In
                         </Button>
                     </div>

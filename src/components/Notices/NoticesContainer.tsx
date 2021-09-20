@@ -14,8 +14,8 @@ const NoticesContainer = (): JSX.Element => {
             available: 'Wednesday, Thursday, Friday - 7:30 - 5:30',
         },
     ]
-
-    return <Notices noticesItems={items} />
+    const randomContent = Math.floor(Math.random() * items.length)
+    return <Notices noticesItems={items[randomContent]} />
 }
 
 export default NoticesContainer

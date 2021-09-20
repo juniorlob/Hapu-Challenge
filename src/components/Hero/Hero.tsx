@@ -1,10 +1,12 @@
+import Button from '../Button'
+import Container from '../Container'
 import { PlayIcon } from '../Icons/PlayIcon'
 import { HeroProps } from './Hero.interface'
-import { HeroContainer, HeroGrid, HeroWrapper } from './Hero.style'
+import { HeroGrid, HeroWrapper } from './Hero.style'
 
 const Hero = ({ bgHero, imgHero, content }: HeroProps): JSX.Element => (
     <HeroWrapper bgImg={bgHero}>
-        <HeroContainer>
+        <Container maxW={{ xs: 18, sm: 23, md: 40, lg: 48, xl: 70 }}>
             <HeroGrid>
                 <div>
                     {content && (
@@ -13,14 +15,21 @@ const Hero = ({ bgHero, imgHero, content }: HeroProps): JSX.Element => (
                             <h5>{content.text}</h5>
                         </>
                     )}
-                    <a href="#">
+                    <Button link to="#">
                         <PlayIcon h={48} w="auto" color="primary" />
                         See hapu in action (27 seconds)
-                    </a>
+                    </Button>
                 </div>
-                {imgHero && <img src={imgHero.img} alt={imgHero.alt} />}
+                {imgHero && (
+                    <img
+                        width="316"
+                        height="290"
+                        src={imgHero.img}
+                        alt={imgHero.alt}
+                    />
+                )}
             </HeroGrid>
-        </HeroContainer>
+        </Container>
     </HeroWrapper>
 )
 export default Hero

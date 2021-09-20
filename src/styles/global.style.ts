@@ -17,6 +17,11 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${palette('bgBody')};
     -webkit-font-smoothing: antialiased;
+    font-size: ${theme('fontSize.body.md')};
+
+    @media (${theme('breakpoint.md.max')}){
+        font-size: ${theme('fontSize.body.xs')};
+    }
   }
 
   body, input, button {

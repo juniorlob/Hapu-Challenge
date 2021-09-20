@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom'
 import styled, { css } from 'styled-components'
 import { switchProp, theme, ifProp, palette } from 'styled-tools'
+import { LinksProps } from './Button.interface'
 
 export const ButtonEl = styled.button`
     display: inline-flex;
@@ -74,13 +76,19 @@ export const ButtonEl = styled.button`
     ${theme('components.Button.default')}
 `
 
-export const Link = styled.a`
-    /* color: ${palette('textLink')}; */
+export const BtnLink = styled(Link)<LinksProps>`
     transition: ${theme('transition')};
     cursor: pointer;
-
+    text-decoration: underline;
+    ${ifProp(
+        'btnColor',
+        css`
+            color: ${({ btnColor }: LinksProps) =>
+                btnColor ? palette(btnColor) : 'secondary'};
+        `
+    )}
     &:hover {
-        color: ${palette('textLinkHover')};
+        opacity: 0.9;
     }
 
     ${theme('components.Button.link')}

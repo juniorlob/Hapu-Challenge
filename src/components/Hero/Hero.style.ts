@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { palette, theme } from 'styled-tools'
-import Container from '../Container'
 import { HeroStyleProps } from './Hero.interface'
 
 export const HeroWrapper = styled.div`
@@ -22,9 +21,10 @@ export const HeroWrapper = styled.div`
 
     height: 616px;
     display: flex;
-`
-export const HeroContainer = styled(Container)`
-    max-width: 70rem;
+
+    @media (${theme('breakpoint.md.max')}) {
+        height: 540px;
+    }
 `
 
 export const HeroGrid = styled.div`
@@ -34,26 +34,46 @@ export const HeroGrid = styled.div`
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-
     margin-top: auto;
+
+    @media (${theme('breakpoint.md.max')}) {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
     & > div {
         display: grid;
-        grid-row-gap: 20px;
+        grid-row-gap: ${theme('spacing.lg')};
+        @media (${theme('breakpoint.md.max')}) {
+            margin-top: auto;
+            margin-bottom: ${theme('spacing.2xxl')};
+        }
+
         h1 {
             font-size: ${theme('fontSize.title.h1')};
-            line-height: 48px;
+            line-height: ${theme('lineHeight.2lg')};
             font-weight: 500;
+            @media (${theme('breakpoint.md.max')}) {
+                font-size: ${theme('fontSize.title.h2')};
+                line-height: ${theme('lineHeight.md')};
+            }
         }
         h5 {
             font-size: ${theme('fontSize.title.lg')};
             line-height: 24px;
             font-weight: 400;
+            @media (${theme('breakpoint.md.max')}) {
+                line-height: ${theme('lineHeight.xl')};
+            }
         }
     }
 
     & > img {
         width: auto;
         height: fit-content;
+        @media (${theme('breakpoint.md.max')}) {
+            display: none;
+        }
     }
     a {
         display: grid;
@@ -65,6 +85,9 @@ export const HeroGrid = styled.div`
         transition: ${theme('transition')};
         &:hover {
             opacity: 0.8;
+        }
+        @media (${theme('breakpoint.md.max')}) {
+            margin-top: ${theme('spacing.xl')};
         }
     }
 `

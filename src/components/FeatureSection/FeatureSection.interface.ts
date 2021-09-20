@@ -13,8 +13,14 @@ export interface FeatureContainerProps {
     paragraph: string
     cta: ctaProps
     img?: sectionImgProps
+    imgOrder?: number
+    columns?: number
 }
 
-export interface FeaturesSectionProps {
-    featureContent: FeatureContainerProps
+export type FeaturesSectionProps = FeatureContainerProps
+
+export type FeaturesStyleProps = {
+    hasImg?: boolean
+    imgOrder?: number
+    columns?: number
 }

@@ -1,16 +1,13 @@
-import FeatureSection from '../FeatureSection/FeatureSection'
+import FeatureSection from '../FeatureSection'
 import { HapuPrinciplesWrapper } from './HapuPrinciples.style'
 
 const HapuPrinciples = (): JSX.Element => {
     const shareHomeData = {
-        title: 'Share your home, nanny and costs',
+        title: 'A framework built for the long term',
         paragraph:
-            'You have a fantastic home, a fantastic nanny and wouldn’t cutting your costs in half be, well, fantastic?! If only it was easy to connect with other parents to share your costs? Well now it is, with Hapu. [Hapu means tribe](#) and it’s our foundational 3 tribal principles that empowers you to create and manage your own tribe. A tribe that together has the power to create new affordable solutions in childcare that work for you and your community.',
+            'Childcare is for the long term. And you need a framework you can count on that gives your share long term viability and success. That’s why we’ve defined Hapu around our three tribal principles; clearly defined process, transparency over money and equality of participation.',
         cta: { text: 'Ready to get started?', link: '#' },
-        img: {
-            url: '/nanny-share-hapu.png',
-            alt: 'Nanny share dashboard on laptop',
-        },
+        img: { url: '/billing-history.png', alt: '' },
     }
 
     return (

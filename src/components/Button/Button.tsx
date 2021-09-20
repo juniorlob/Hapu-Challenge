@@ -1,9 +1,16 @@
-import { ButtonProps } from './Button.interface'
-import { Link, ButtonEl } from './Button.style'
+import { BtnComponentProps } from './Button.interface'
+import { BtnLink, ButtonEl } from './Button.style'
 
-const Button = ({ link, children, ...props }: ButtonProps): JSX.Element =>
-    link ? (
-        <Link {...props}>{children}</Link>
+const Button = ({
+    link,
+    to,
+    children,
+    ...props
+}: BtnComponentProps): JSX.Element =>
+    link && to ? (
+        <BtnLink to={to} {...props}>
+            {children}
+        </BtnLink>
     ) : (
         <ButtonEl {...props}>{children}</ButtonEl>
     )

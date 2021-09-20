@@ -1,3 +1,4 @@
+import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
 import { LayoutWrapperProps } from './LayoutWrapper.interface'
 
@@ -15,6 +16,7 @@ const LayoutWrapper = ({ children }: LayoutWrapperProps): JSX.Element => (
     <LayoutWrapperContainer>
         <Navbar />
         {children}
+        <Footer />
     </LayoutWrapperContainer>
 )
 export default LayoutWrapper

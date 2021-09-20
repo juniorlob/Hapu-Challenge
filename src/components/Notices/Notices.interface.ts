@@ -15,5 +15,5 @@ interface NoticesItemProps {
 }
 
 export interface NoticesItemsProps {
-    noticesItems: Array<NoticesItemProps>
+    noticesItems: NoticesItemProps
 }

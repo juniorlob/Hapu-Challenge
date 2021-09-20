@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { palette, theme } from 'styled-tools'
 import { MainMenuProps } from './Navbar.interface'
@@ -7,17 +8,20 @@ export const NavbarWrapper = styled.header`
     display: flex;
     position: absolute;
     z-index: 100;
-    gap: 40px;
+    gap: ${theme('spacing.xxl')};
     color: ${palette('navbarTextColor')};
     font-size: ${theme('fontSize.md')};
     font-weight: 500;
-
-    a {
-        color: ${palette('navbarTextColor')};
-        text-decoration: none;
-        &:hover {
-            opacity: 0.7;
-        }
+    @media (${theme('breakpoint.lg.max')}) {
+        gap: ${theme('spacing.lg')};
+    }
+`
+export const MenuLinks = styled(Link)`
+    color: ${palette('navbarTextColor')};
+    text-decoration: none;
+    transition: ${theme('transition')};
+    &:hover {
+        opacity: 0.7;
     }
 `
 
@@ -31,30 +35,24 @@ export const Brand = styled.div`
     border-radius: 0px 0px 32px 32px;
     padding-bottom: 13px;
 `
-export const MenuButton = styled.button`
-    background-color: ${palette('primary')};
-    color: ${palette('white')};
-    padding: 22px 12px 21px 12px;
-`
-
-export const RightItems = styled.div`
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    align-items: center;
-    gap: 32px;
-`
 
 export const Nav = styled.nav`
     width: 100%;
-
+    padding: ${theme('spacing.md')} 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    transition: ${theme('transition')};
     & > div:last-child {
         display: flex;
         align-items: center;
-        gap: 23px;
+        gap: ${theme('spacing.lg')};
+        margin-left: auto;
+        @media (${theme('breakpoint.sm.max')}) {
+            & > a {
+                display: none;
+            }
+        }
     }
 `
 
@@ -66,7 +64,13 @@ export const MainMenu = styled.ul<MainMenuProps>`
         ${({ templateColumns }) => templateColumns || 1},
         auto
     );
-    gap: 32px;
+    gap: ${theme('spacing.xl')};
+    @media (${theme('breakpoint.lg.max')}) {
+        gap: ${theme('spacing.sm')};
+    }
+    @media (${theme('breakpoint.md.max')}) {
+        display: none;
+    }
 `
 
 export const PositionRelative = styled.div`

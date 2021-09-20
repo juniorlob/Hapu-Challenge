@@ -1,10 +1,10 @@
-import { darken } from 'polished'
+import { darken, transparentize } from 'polished'
 
 const theme = {
     fontFamily: "'Inter', sans-serif",
 
     fontSize: {
-        body: '18px',
+        body: { xs: '16px', md: '18px' },
         title: {
             h1: '2.222rem',
             h2: '1.556rem',
@@ -18,9 +18,16 @@ const theme = {
         lg: '1rem',
     },
     spacing: {
-        sm: '.2rem',
-        lg: '1.3rem',
+        xs: '.222rem',
+        sm: '.444rem',
+        md: '.889rem',
+        lg: '1.333rem',
+
+        xl: '1.778rem',
+        xxl: '2.222rem',
+        '2xxl': '4.875rem',
     },
+    lineHeight: { md: '2rem', '2lg': '2.666rem' },
     shadow: {
         sm: '0px 1px 1px rgba(0, 0, 0, 0.2)',
     },
@@ -62,7 +69,6 @@ const breakpoint = {
 const components = {
     globalStyle: {
         body: {
-            fontSize: theme.fontSize.body,
             fontFamily: theme.fontFamily,
             color: colors.grey['24'],
         },
@@ -73,7 +79,7 @@ const components = {
             fontWeight: 500,
             color: colors.white,
         },
-        link: { fontWeight: 500 },
+        link: { fontWeight: 500, fontSize: theme.fontSize.md },
         sizes: {
             sm: {
                 fontSize: theme.fontSize.xs,
@@ -86,11 +92,21 @@ const components = {
                 paddingRight: theme.spacing.lg,
             },
             lg: {
-                fontSize: theme.fontSize.xs,
+                fontSize: theme.fontSize.lg,
                 paddingLeft: theme.spacing.sm,
                 paddingRight: theme.spacing.sm,
             },
         },
+    },
+    Divider: {
+        content: `' '`,
+        display: 'block',
+        backgroundColor: colors.grey['88'],
+        height: '2px',
+        maxWidth: '43rem',
+        width: '100%',
+        margin: '0 auto',
+        padding: `0 ${theme.spacing.lg}`,
     },
 }
 
@@ -108,8 +124,15 @@ const lightTheme = {
         navbarTextColor: colors.white,
         linkColorLight: colors.white,
         colorGrey88: colors.grey['88'],
+        colorGrey24: colors.grey['24'],
+        inputBorderColor: colors.grey['88'],
+        socialIconsColor: transparentize(0.3, colors.grey['24']),
+        borderIconsColor: colors.grey['88'],
+        bgButtonSecondary: colors.secondary,
+        copyrightColor: transparentize(0.4, colors.grey['24']),
     },
     breakpoint,
+    size,
     components,
 }
 
