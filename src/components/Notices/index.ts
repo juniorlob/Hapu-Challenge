@@ -1,1 +1,1 @@
-export { default } from './NoticesContainer'
+export { default } from './NoticesContainer';

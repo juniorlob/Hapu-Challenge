@@ -1,8 +1,8 @@
-import styled, { css } from 'styled-components'
-import { ifProp, theme } from 'styled-tools'
-import Button from '../Button'
+import styled, { css } from 'styled-components';
+import { ifProp, theme } from 'styled-tools';
+import Button from '../Button';
 
-import { FeaturesStyleProps } from './FeatureSection.interface'
+import { FeaturesStyleProps } from './FeatureSection.interface';
 
 export const FeatureSectionWrapper = styled.div<FeaturesStyleProps>`
     display: grid;
@@ -70,7 +70,7 @@ export const FeatureSectionWrapper = styled.div<FeaturesStyleProps>`
             font-size: ${theme('fontSize.xl')};
         }
     }
-`
+`;
 
 export const FeatureSectionBtn = styled(Button)<FeaturesStyleProps>`
     display: block;
@@ -81,4 +81,4 @@ export const FeatureSectionBtn = styled(Button)<FeaturesStyleProps>`
                   margin: 0 auto;
               `
             : null}
-`
+`;

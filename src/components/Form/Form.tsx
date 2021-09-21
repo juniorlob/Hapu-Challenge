@@ -1,6 +1,6 @@
-import Button from '../Button'
-import Container from '../Container'
-import { FormGrid, FormWraper } from './Form.style'
+import Button from '../Button';
+import Container from '../Container';
+import { FormGrid, FormWraper } from './Form.style';
 
 const Form = (): JSX.Element => (
     <FormWraper>
@@ -25,5 +25,5 @@ const Form = (): JSX.Element => (
             </Container>
         </div>
     </FormWraper>
-)
-export default Form
+);
+export default Form;

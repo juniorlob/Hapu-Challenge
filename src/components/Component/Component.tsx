@@ -1,3 +1,3 @@
-const Component = (): JSX.Element => <div>item</div>
+const Component = (): JSX.Element => <div>item</div>;
 
-export default Component
+export default Component;

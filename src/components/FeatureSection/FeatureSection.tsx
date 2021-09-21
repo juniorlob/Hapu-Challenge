@@ -1,10 +1,10 @@
-import ReactMarkdown from 'react-markdown'
-import Container from '../Container'
-import { FeaturesSectionProps } from './FeatureSection.interface'
+import ReactMarkdown from 'react-markdown';
+import Container from '../Container';
+import { FeaturesSectionProps } from './FeatureSection.interface';
 import {
     FeatureSectionBtn,
     FeatureSectionWrapper,
-} from './FeatureSection.style'
+} from './FeatureSection.style';
 
 const FeatureSection = ({
     title,
@@ -31,6 +31,6 @@ const FeatureSection = ({
             {img && <img src={img.url} alt={img.alt} />}
         </FeatureSectionWrapper>
     </Container>
-)
+);
 
-export default FeatureSection
+export default FeatureSection;

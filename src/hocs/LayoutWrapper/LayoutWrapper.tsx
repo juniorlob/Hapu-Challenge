@@ -1,8 +1,8 @@
-import Footer from '../../components/Footer'
-import Navbar from '../../components/Navbar'
-import { LayoutWrapperProps } from './LayoutWrapper.interface'
+import Footer from '../../components/Footer';
+import Navbar from '../../components/Navbar';
+import { LayoutWrapperProps } from './LayoutWrapper.interface';
 
-import { LayoutWrapperContainer } from './LayoutWrapper.style'
+import { LayoutWrapperContainer } from './LayoutWrapper.style';
 
 /* NOTE
 	This Component mount the general page layout like Header, Footer and wraps the content of the body
@@ -18,5 +18,5 @@ const LayoutWrapper = ({ children }: LayoutWrapperProps): JSX.Element => (
         {children}
         <Footer />
     </LayoutWrapperContainer>
-)
-export default LayoutWrapper
+);
+export default LayoutWrapper;

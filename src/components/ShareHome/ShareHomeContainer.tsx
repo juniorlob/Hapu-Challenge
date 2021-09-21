@@ -1,5 +1,5 @@
-import FeatureSection from '../FeatureSection'
-import { ShareHomeWrapper } from './ShareHome.style'
+import FeatureSection from '../FeatureSection';
+import { ShareHomeWrapper } from './ShareHome.style';
 
 const ShareHome = (): JSX.Element => {
     const shareHomeData = {
@@ -11,7 +11,7 @@ const ShareHome = (): JSX.Element => {
             url: '/nanny-share-hapu.png',
             alt: 'Nanny share dashboard on laptop',
         },
-    }
+    };
 
     return (
         <ShareHomeWrapper>
@@ -23,7 +23,7 @@ const ShareHome = (): JSX.Element => {
                 img={shareHomeData.img}
             />
         </ShareHomeWrapper>
-    )
-}
+    );
+};
 
-export default ShareHome
+export default ShareHome;

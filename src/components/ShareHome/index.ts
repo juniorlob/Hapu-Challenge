@@ -1,1 +1,1 @@
-export { default } from './ShareHomeContainer'
+export { default } from './ShareHomeContainer';

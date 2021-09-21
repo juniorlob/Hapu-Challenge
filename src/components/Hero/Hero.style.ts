@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { palette, theme } from 'styled-tools'
-import { BgHero } from './Hero.interface'
+import styled from 'styled-components';
+import { palette, theme } from 'styled-tools';
+import { BgHero } from './Hero.interface';
 
 export const HeroWrapper = styled.div<BgHero>`
     position: relative;
@@ -32,7 +32,7 @@ export const HeroWrapper = styled.div<BgHero>`
             ),
             ${({ bgImg }: BgHero) => (bgImg ? `url(${bgImg.xs})` : '')};
     }
-`
+`;
 
 export const HeroGrid = styled.div`
     height: 100%;
@@ -103,4 +103,4 @@ export const HeroGrid = styled.div`
             margin-top: ${theme('spacing.xl')};
         }
     }
-`
+`;

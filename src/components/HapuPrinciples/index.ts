@@ -1,1 +1,1 @@
-export { default } from './HapuPrinciplesContainer'
+export { default } from './HapuPrinciplesContainer';

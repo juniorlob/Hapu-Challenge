@@ -1,5 +1,5 @@
-import { IconProps } from './Icons.interface'
-import { Icon } from './Icons.styles'
+import { IconProps } from './Icons.interface';
+import { Icon } from './Icons.styles';
 
 export const CalendarIcon = (p: IconProps): JSX.Element => (
     <Icon {...p} viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
@@ -16,4 +16,4 @@ export const CalendarIcon = (p: IconProps): JSX.Element => (
             fill="currentColor"
         />
     </Icon>
-)
+);

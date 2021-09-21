@@ -1,5 +1,5 @@
-import { BtnComponentProps } from './Button.interface'
-import { BtnLink, ButtonEl } from './Button.style'
+import { BtnComponentProps } from './Button.interface';
+import { BtnLink, ButtonEl } from './Button.style';
 
 const Button = ({
     link,
@@ -13,6 +13,6 @@ const Button = ({
         </BtnLink>
     ) : (
         <ButtonEl {...props}>{children}</ButtonEl>
-    )
+    );
 
-export default Button
+export default Button;

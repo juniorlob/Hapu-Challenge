@@ -7,4 +7,4 @@ export default {
     currentPage: 1,
     error: {},
     success: '',
-}
+};

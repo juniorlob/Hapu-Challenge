@@ -1,10 +1,10 @@
-import Button from '../Button'
-import Container from '../Container'
-import { NoticesItemsProps } from './Notices.interface'
-import { Notice, NoticesWrapper } from './Notices.style'
+import Button from '../Button';
+import Container from '../Container';
+import { NoticesItemsProps } from './Notices.interface';
+import { Notice, NoticesWrapper } from './Notices.style';
 
 const Notices = ({ noticesItems }: NoticesItemsProps): JSX.Element => {
-    const nI = noticesItems
+    const nI = noticesItems;
 
     return (
         <NoticesWrapper>
@@ -25,6 +25,6 @@ const Notices = ({ noticesItems }: NoticesItemsProps): JSX.Element => {
                 </Notice>
             </Container>
         </NoticesWrapper>
-    )
-}
-export default Notices
+    );
+};
+export default Notices;

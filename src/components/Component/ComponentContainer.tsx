@@ -1,5 +1,5 @@
-import Component from './Component'
+import Component from './Component';
 
-const ComponentContainer = (): JSX.Element => <Component />
+const ComponentContainer = (): JSX.Element => <Component />;
 
-export default ComponentContainer
+export default ComponentContainer;

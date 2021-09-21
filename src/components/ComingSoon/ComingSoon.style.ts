@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { theme } from 'styled-tools'
+import styled from 'styled-components';
+import { theme } from 'styled-tools';
 
 export const ComingSoonWrapper = styled.section`
     text-align: center;
@@ -9,4 +9,4 @@ export const ComingSoonWrapper = styled.section`
     @media (${theme('breakpoint.md.max')}) {
         padding: ${theme('spacing.2xl')} 0;
     }
-`
+`;

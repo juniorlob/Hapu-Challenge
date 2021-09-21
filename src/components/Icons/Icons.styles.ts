@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components'
-import { ifProp, palette } from 'styled-tools'
-import { IconProps } from './Icons.interface'
+import styled, { css } from 'styled-components';
+import { ifProp, palette } from 'styled-tools';
+import { IconProps } from './Icons.interface';
 
 export const Icon = styled.svg<IconProps>`
     height: ${(p) => `${p.h}px` || '1em'};
@@ -13,4 +13,4 @@ export const Icon = styled.svg<IconProps>`
                 hoverColor ? palette(hoverColor) : ''};
         }
     `)}
-`
+`;

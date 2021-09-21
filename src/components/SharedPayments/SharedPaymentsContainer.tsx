@@ -1,5 +1,5 @@
-import FeatureSection from '../FeatureSection'
-import { SharedPaymentsWrapper } from './SharedPayments.style'
+import FeatureSection from '../FeatureSection';
+import { SharedPaymentsWrapper } from './SharedPayments.style';
 
 const ShareHome = (): JSX.Element => {
     const shareHomeData = {
@@ -14,7 +14,7 @@ const ShareHome = (): JSX.Element => {
             url: '/shared-payments.png',
             alt: 'Dashboard payment step',
         },
-    }
+    };
 
     return (
         <SharedPaymentsWrapper>
@@ -27,7 +27,7 @@ const ShareHome = (): JSX.Element => {
                 img={shareHomeData.img}
             />
         </SharedPaymentsWrapper>
-    )
-}
+    );
+};
 
-export default ShareHome
+export default ShareHome;

@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom'
-import styled, { css } from 'styled-components'
-import { switchProp, theme, ifProp, palette } from 'styled-tools'
-import { LinksProps } from './Button.interface'
+import { Link } from 'react-router-dom';
+import styled, { css } from 'styled-components';
+import { switchProp, theme, ifProp, palette } from 'styled-tools';
+import { LinksProps } from './Button.interface';
 
 export const ButtonEl = styled.button`
     display: inline-flex;
@@ -75,7 +75,7 @@ export const ButtonEl = styled.button`
     }
 
     ${theme('components.Button.default')}
-`
+`;
 
 export const BtnLink = styled(Link)<LinksProps>`
     transition: ${theme('transition')};
@@ -94,4 +94,4 @@ export const BtnLink = styled(Link)<LinksProps>`
     }
 
     ${theme('components.Button.link')}
-`
+`;

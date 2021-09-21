@@ -1,1 +1,1 @@
-export { default } from './ComingSoonContainer'
+export { default } from './ComingSoonContainer';

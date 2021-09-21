@@ -1,5 +1,5 @@
-import FeatureSection from '../FeatureSection'
-import { ComingSoonWrapper } from './ComingSoon.style'
+import FeatureSection from '../FeatureSection';
+import { ComingSoonWrapper } from './ComingSoon.style';
 
 const ComingSoonContainer = (): JSX.Element => {
     const shareHomeData = {
@@ -8,7 +8,7 @@ const ComingSoonContainer = (): JSX.Element => {
             'With the Hapu daily diary your nanny will be able to update you and your sharers with photos and commentary of the day. You and sharers will receive notifications and you’ll be able to login to view the daily adventures fo your little ones. We can’t wait!',
         cta: { text: 'Ready to get started?', link: '#' },
         img: { url: '/coming-soon.png', alt: '' },
-    }
+    };
 
     return (
         <ComingSoonWrapper>
@@ -20,7 +20,7 @@ const ComingSoonContainer = (): JSX.Element => {
                 img={shareHomeData.img}
             />
         </ComingSoonWrapper>
-    )
-}
+    );
+};
 
-export default ComingSoonContainer
+export default ComingSoonContainer;

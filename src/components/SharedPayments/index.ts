@@ -1,1 +1,1 @@
-export { default } from './SharedPaymentsContainer'
+export { default } from './SharedPaymentsContainer';

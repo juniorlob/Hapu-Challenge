@@ -1,8 +1,8 @@
-import Button from '../Button'
-import Container from '../Container'
-import { PlayIcon } from '../Icons/PlayIcon'
-import { HeroProps } from './Hero.interface'
-import { HeroGrid, HeroWrapper } from './Hero.style'
+import Button from '../Button';
+import Container from '../Container';
+import { PlayIcon } from '../Icons/PlayIcon';
+import { HeroProps } from './Hero.interface';
+import { HeroGrid, HeroWrapper } from './Hero.style';
 
 const Hero = ({ bgHero, imgHero, content }: HeroProps): JSX.Element => (
     <HeroWrapper bgImg={bgHero}>
@@ -31,5 +31,5 @@ const Hero = ({ bgHero, imgHero, content }: HeroProps): JSX.Element => (
             </HeroGrid>
         </Container>
     </HeroWrapper>
-)
-export default Hero
+);
+export default Hero;

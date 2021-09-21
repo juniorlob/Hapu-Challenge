@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { theme } from 'styled-tools'
+import styled from 'styled-components';
+import { theme } from 'styled-tools';
 
 export const HapuPrinciplesWrapper = styled.section`
     &:after {
@@ -30,4 +30,4 @@ export const HapuPrinciplesWrapper = styled.section`
             padding: ${theme('spacing.2xl')} 0;
         }
     }
-`
+`;

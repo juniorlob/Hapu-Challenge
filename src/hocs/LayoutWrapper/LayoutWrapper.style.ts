@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-export const LayoutWrapperContainer = styled.div``
-export {}
+export const LayoutWrapperContainer = styled.div``;
+export {};

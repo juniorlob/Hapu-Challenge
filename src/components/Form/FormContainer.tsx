@@ -1,5 +1,5 @@
-import Form from './Form'
+import Form from './Form';
 
-const FormContainer = (): JSX.Element => <Form />
+const FormContainer = (): JSX.Element => <Form />;
 
-export default FormContainer
+export default FormContainer;

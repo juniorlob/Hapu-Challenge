@@ -1,4 +1,4 @@
-import Hero from './Hero'
+import Hero from './Hero';
 
 const HeroContainer = (): JSX.Element => {
     const heroContent = {
@@ -17,9 +17,11 @@ const HeroContainer = (): JSX.Element => {
                 text: 'Connect with other local families to share a nanny from as low as $10.00/hr each. Create your family profile today to get started.',
             },
         ],
-    }
+    };
 
-    const randomContent = Math.floor(Math.random() * heroContent.content.length)
+    const randomContent = Math.floor(
+        Math.random() * heroContent.content.length
+    );
 
     return (
         <Hero
@@ -27,6 +29,6 @@ const HeroContainer = (): JSX.Element => {
             bgHero={heroContent.bgHero}
             imgHero={heroContent.imgHeader}
         />
-    )
-}
-export default HeroContainer
+    );
+};
+export default HeroContainer;

@@ -1,5 +1,5 @@
-import { IconProps } from './Icons.interface'
-import { Icon } from './Icons.styles'
+import { IconProps } from './Icons.interface';
+import { Icon } from './Icons.styles';
 
 export const FacebookIcon = (p: IconProps): JSX.Element => (
     <Icon {...p} viewBox="0 0 9 17" xmlns="http://www.w3.org/2000/svg">
@@ -9,4 +9,4 @@ export const FacebookIcon = (p: IconProps): JSX.Element => (
             fill="currentColor"
         />
     </Icon>
-)
+);

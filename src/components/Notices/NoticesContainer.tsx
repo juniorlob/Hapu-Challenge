@@ -1,4 +1,4 @@
-import Notices from './Notices'
+import Notices from './Notices';
 
 const NoticesContainer = (): JSX.Element => {
     const items = [
@@ -13,9 +13,9 @@ const NoticesContainer = (): JSX.Element => {
             },
             available: 'Wednesday, Thursday, Friday - 7:30 - 5:30',
         },
-    ]
-    const randomContent = Math.floor(Math.random() * items.length)
-    return <Notices noticesItems={items[randomContent]} />
-}
+    ];
+    const randomContent = Math.floor(Math.random() * items.length);
+    return <Notices noticesItems={items[randomContent]} />;
+};
 
-export default NoticesContainer
+export default NoticesContainer;

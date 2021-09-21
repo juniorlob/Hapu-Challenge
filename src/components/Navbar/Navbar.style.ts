@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom'
-import styled from 'styled-components'
-import { palette, theme } from 'styled-tools'
-import { MainMenuProps } from './Navbar.interface'
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import { palette, theme } from 'styled-tools';
+import { MainMenuProps } from './Navbar.interface';
 
 export const NavbarWrapper = styled.header`
     width: 100%;
@@ -15,7 +15,7 @@ export const NavbarWrapper = styled.header`
     @media (${theme('breakpoint.lg.max')}) {
         gap: ${theme('spacing.lg')};
     }
-`
+`;
 export const MenuLinks = styled(Link)`
     color: ${palette('navbarTextColor')};
     text-decoration: none;
@@ -23,7 +23,7 @@ export const MenuLinks = styled(Link)`
     &:hover {
         opacity: 0.7;
     }
-`
+`;
 
 export const Brand = styled.div`
     background-color: ${palette('brandBg')};
@@ -34,7 +34,7 @@ export const Brand = styled.div`
     align-items: flex-end;
     border-radius: 0px 0px 32px 32px;
     padding-bottom: 13px;
-`
+`;
 
 export const Nav = styled.nav`
     width: 100%;
@@ -54,7 +54,7 @@ export const Nav = styled.nav`
             }
         }
     }
-`
+`;
 
 export const MainMenu = styled.ul<MainMenuProps>`
     list-style: none;
@@ -71,8 +71,8 @@ export const MainMenu = styled.ul<MainMenuProps>`
     @media (${theme('breakpoint.md.max')}) {
         display: none;
     }
-`
+`;
 
 export const PositionRelative = styled.div`
     position: relative;
-`
+`;

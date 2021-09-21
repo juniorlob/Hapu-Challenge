@@ -1,11 +1,11 @@
-import styled from 'styled-components'
-import { palette, theme } from 'styled-tools'
-import Button from '../Button'
+import styled from 'styled-components';
+import { palette, theme } from 'styled-tools';
+import Button from '../Button';
 
 export const FooterWrapper = styled.footer`
     background-color: ${palette('white')};
     padding: ${theme('spacing.xxl')} 0 ${theme('spacing.lg')} 0;
-`
+`;
 
 export const FooterCta = styled.div`
     text-align: center;
@@ -20,7 +20,7 @@ export const FooterCta = styled.div`
     & > button {
         margin-bottom: ${theme('spacing.lg')};
     }
-`
+`;
 export const FooterButton = styled(Button)`
     display: grid;
     width: fit-content;
@@ -40,7 +40,7 @@ export const FooterButton = styled(Button)`
             font-size: ${theme('fontSize.sm')};
         }
     }
-`
+`;
 export const FooterLinks = styled.nav`
     display: flex;
     justify-content: space-between;
@@ -72,7 +72,7 @@ export const FooterLinks = styled.nav`
             }
         }
     }
-`
+`;
 
 export const FooterNetworks = styled.div`
     display: flex;
@@ -93,7 +93,7 @@ export const FooterNetworks = styled.div`
     svg {
         color: ${palette('socialIconsColor')};
     }
-`
+`;
 
 export const Copy = styled.div`
     padding-top: ${theme('spacing.lg')};
@@ -103,4 +103,4 @@ export const Copy = styled.div`
     @media (${theme('breakpoint.md.max')}) {
         border-top: 1px solid ${palette('colorGrey88')};
     }
-`
+`;

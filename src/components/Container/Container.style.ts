@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components'
-import { switchProp, theme } from 'styled-tools'
-import { ContainerProps, ContainerPropTypes } from './Container.interface'
+import styled, { css } from 'styled-components';
+import { switchProp, theme } from 'styled-tools';
+import { ContainerProps, ContainerPropTypes } from './Container.interface';
 
 export const ContainerWrapper = styled.div<ContainerProps>`
     padding: 0 ${theme('spacing.lg')};
@@ -79,4 +79,4 @@ export const ContainerWrapper = styled.div<ContainerProps>`
     &:after {
         clear: both;
     }
-`
+`;

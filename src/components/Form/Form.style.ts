@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { palette, theme } from 'styled-tools'
+import styled from 'styled-components';
+import { palette, theme } from 'styled-tools';
 
 export const FormWraper = styled.section`
     text-align: center;
@@ -46,11 +46,11 @@ export const FormWraper = styled.section`
             max-width: ${theme('size.2xs')};
         }
     }
-`
+`;
 
 export const FormGrid = styled.div`
     display: grid;
     justify-content: center;
     text-align: center;
     gap: 16px;
-`
+`;

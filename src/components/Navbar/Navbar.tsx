@@ -1,7 +1,7 @@
-import Button from '../Button'
-import Container from '../Container'
-import { HapuIcon } from '../Icons/HapuIcon'
-import { NavbarProps, NavItems } from './Navbar.interface'
+import Button from '../Button';
+import Container from '../Container';
+import { HapuIcon } from '../Icons/HapuIcon';
+import { NavbarProps, NavItems } from './Navbar.interface';
 import {
     Brand,
     MainMenu,
@@ -9,11 +9,11 @@ import {
     Nav,
     NavbarWrapper,
     PositionRelative,
-} from './Navbar.style'
+} from './Navbar.style';
 
 const NavLink = ({ children, link }: NavItems): JSX.Element => (
     <MenuLinks to={link}> {children}</MenuLinks>
-)
+);
 
 const Navbar = ({ navItems }: NavbarProps): JSX.Element => (
     <Container>
@@ -49,6 +49,6 @@ const Navbar = ({ navItems }: NavbarProps): JSX.Element => (
             </NavbarWrapper>
         </PositionRelative>
     </Container>
-)
+);
 
-export default Navbar
+export default Navbar;

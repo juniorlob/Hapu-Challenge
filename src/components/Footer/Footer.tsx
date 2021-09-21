@@ -1,11 +1,11 @@
-import Button from '../Button'
-import Container from '../Container'
-import { CalendarIcon } from '../Icons/CalendarIcon'
-import { FacebookIcon } from '../Icons/FacebookIcon'
-import { HapuLogo } from '../Icons/HapuLogo'
-import { InstagramIcon } from '../Icons/InstagramIcon'
-import { TwitterIcon } from '../Icons/TwitterIcon'
-import { FooterProps } from './Footer.interface'
+import Button from '../Button';
+import Container from '../Container';
+import { CalendarIcon } from '../Icons/CalendarIcon';
+import { FacebookIcon } from '../Icons/FacebookIcon';
+import { HapuLogo } from '../Icons/HapuLogo';
+import { InstagramIcon } from '../Icons/InstagramIcon';
+import { TwitterIcon } from '../Icons/TwitterIcon';
+import { FooterProps } from './Footer.interface';
 import {
     Copy,
     FooterButton,
@@ -13,7 +13,7 @@ import {
     FooterLinks,
     FooterNetworks,
     FooterWrapper,
-} from './Footer.style'
+} from './Footer.style';
 
 const Footer = ({ since }: FooterProps): JSX.Element => (
     <FooterWrapper>
@@ -73,6 +73,6 @@ const Footer = ({ since }: FooterProps): JSX.Element => (
             </Copy>
         </Container>
     </FooterWrapper>
-)
+);
 
-export default Footer
+export default Footer;

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const NotFoundWrapper = styled.div`
     min-height: 100vh;
@@ -8,4 +8,4 @@ export const NotFoundWrapper = styled.div`
     align-items: center;
     justify-content: center;
     gap: 40px;
-`
+`;

@@ -1,15 +1,15 @@
-import { ReactNode } from 'react'
+import { ReactNode } from 'react';
 
 export interface NavItems {
-    title?: string
-    link: string
-    children?: ReactNode
+    title?: string;
+    link: string;
+    children?: ReactNode;
 }
 
 export interface NavbarProps {
-    navItems: NavItems[]
+    navItems: NavItems[];
 }
 
 export interface MainMenuProps {
-    templateColumns?: number
+    templateColumns?: number;
 }

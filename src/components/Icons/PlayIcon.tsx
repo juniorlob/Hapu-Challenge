@@ -1,5 +1,5 @@
-import { IconProps } from './Icons.interface'
-import { Icon } from './Icons.styles'
+import { IconProps } from './Icons.interface';
+import { Icon } from './Icons.styles';
 
 export const PlayIcon = (p: IconProps): JSX.Element => (
     <Icon {...p} viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
@@ -12,4 +12,4 @@ export const PlayIcon = (p: IconProps): JSX.Element => (
             fill="white"
         />
     </Icon>
-)
+);

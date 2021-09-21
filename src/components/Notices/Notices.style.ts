@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { palette, theme } from 'styled-tools'
+import styled from 'styled-components';
+import { palette, theme } from 'styled-tools';
 
 export const NoticesWrapper = styled.div`
     background-color: white;
@@ -8,7 +8,7 @@ export const NoticesWrapper = styled.div`
     @media (${theme('breakpoint.sm.max')}) {
         padding: ${theme('spacing.xl')} 0;
     }
-`
+`;
 
 export const Notice = styled.div`
     display: flex;
@@ -41,4 +41,4 @@ export const Notice = styled.div`
             font-size: ${theme('fontSize.sm')};
         }
     }
-`
+`;
