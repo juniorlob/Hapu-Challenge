@@ -15,7 +15,7 @@ import {
     FooterWrapper,
 } from './Footer.style'
 
-const Footer = ({ since, menuItems }: FooterProps): JSX.Element => (
+const Footer = ({ since }: FooterProps): JSX.Element => (
     <FooterWrapper>
         <Container>
             <FooterCta>

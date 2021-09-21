@@ -2,7 +2,7 @@ import Button from '../Button'
 import Container from '../Container'
 import { FormGrid, FormWraper } from './Form.style'
 
-const Form = (sendData: any): JSX.Element => (
+const Form = (): JSX.Element => (
     <FormWraper>
         <div>
             <Container>
@@ -15,11 +15,7 @@ const Form = (sendData: any): JSX.Element => (
                         soon as a share becomes available in your area!
                     </p>
                     <form action="">
-                        <input
-                            onChange={sendData}
-                            type="text"
-                            placeholder="Your name"
-                        />
+                        <input type="text" placeholder="Your name" />
                         <input type="email" placeholder="Your email" />
                         <Button size="md" type="submit">
                             Send
