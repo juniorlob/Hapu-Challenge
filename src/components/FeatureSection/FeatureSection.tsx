@@ -1,7 +1,7 @@
 import ReactMarkdown from 'react-markdown'
+import Container from '../Container'
 import { FeaturesSectionProps } from './FeatureSection.interface'
 import {
-    FeatureContainer,
     FeatureSectionBtn,
     FeatureSectionWrapper,
 } from './FeatureSection.style'
@@ -14,16 +14,15 @@ const FeatureSection = ({
     imgOrder,
     columns,
 }: FeaturesSectionProps): JSX.Element => (
-    <FeatureContainer>
+    <Container maxW={{ xs: 18, sm: 25, md: 40, lg: 47, xl: 55 }}>
         <FeatureSectionWrapper
             columns={columns}
             imgOrder={imgOrder}
             hasImg={img !== undefined}
         >
             <div>
-                <h2>
-                    <ReactMarkdown>{title}</ReactMarkdown>
-                </h2>
+                <ReactMarkdown components={{ p: 'h2' }}>{title}</ReactMarkdown>
+
                 <ReactMarkdown>{paragraph}</ReactMarkdown>
                 <FeatureSectionBtn columns={columns} link to={cta.link}>
                     {cta.text}
@@ -31,7 +30,7 @@ const FeatureSection = ({
             </div>
             {img && <img src={img.url} alt={img.alt} />}
         </FeatureSectionWrapper>
-    </FeatureContainer>
+    </Container>
 )
 
 export default FeatureSection

@@ -37,5 +37,8 @@ export const Notice = styled.div`
                 margin: 0 auto;
             }
         }
+        span {
+            font-size: ${theme('fontSize.sm')};
+        }
     }
 `

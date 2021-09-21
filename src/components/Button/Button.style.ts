@@ -6,6 +6,7 @@ import { LinksProps } from './Button.interface'
 export const ButtonEl = styled.button`
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     border: 0;
     outline: none;
     cursor: pointer;
@@ -80,6 +81,7 @@ export const BtnLink = styled(Link)<LinksProps>`
     transition: ${theme('transition')};
     cursor: pointer;
     text-decoration: underline;
+    line-height: ${theme('spacing.2md')};
     ${ifProp(
         'btnColor',
         css`

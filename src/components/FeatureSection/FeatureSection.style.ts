@@ -1,15 +1,19 @@
 import styled, { css } from 'styled-components'
 import { ifProp, theme } from 'styled-tools'
 import Button from '../Button'
-import Container from '../Container'
+
 import { FeaturesStyleProps } from './FeatureSection.interface'
 
-export const FeatureContainer = styled(Container)``
 export const FeatureSectionWrapper = styled.div<FeaturesStyleProps>`
     display: grid;
-    gap: 64px;
+    gap: ${theme('spacing.xxl')};
 
     grid-template-columns: repeat(${({ columns }) => columns}, 1fr);
+    @media (${theme('breakpoint.md.max')}) {
+        grid-template-columns: 1fr;
+        gap: ${theme('spacing.2lg')};
+        text-align: center;
+    }
     ${ifProp(
         'hasImg',
         css`
@@ -34,23 +38,43 @@ export const FeatureSectionWrapper = styled.div<FeaturesStyleProps>`
             }
         `
     )}
+    @media (${theme('breakpoint.md.max')}) {
+        div {
+            order: 2;
+        }
+
+        img {
+            order: 1;
+            max-width: 100%;
+        }
+    }
 
     div {
         display: grid;
-        gap: 40px;
+        gap: ${theme('spacing.xxl')};
         line-height: inherit;
         font-size: ${theme('fontSize.md')};
+    }
+    @media (${theme('breakpoint.md.max')}) {
+        div {
+            gap: ${theme('spacing.md')};
+        }
     }
     h2 {
         font-size: ${theme('fontSize.title.h2')};
         font-weight: 500;
+        white-space: pre-wrap;
+    }
+    @media (${theme('breakpoint.md.max')}) {
+        h2 {
+            font-size: ${theme('fontSize.xl')};
+        }
     }
 `
 
 export const FeatureSectionBtn = styled(Button)<FeaturesStyleProps>`
     display: block;
 
-    max-width: fit-content;
     ${({ columns }) =>
         columns !== 2
             ? css`

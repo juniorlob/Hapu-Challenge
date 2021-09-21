@@ -46,11 +46,25 @@ export const FooterLinks = styled.nav`
     justify-content: space-between;
     align-items: center;
     padding: ${theme('spacing.xxl')} 0;
+
+    @media (${theme('breakpoint.md.max')}) {
+        flex-direction: column;
+        gap: ${theme('spacing.xxl')};
+    }
+
     ul {
         font-size: ${theme('fontSize.sm')};
         display: flex;
         list-style: none;
+        text-align: center;
         gap: ${theme('spacing.xl')};
+        @media (${theme('breakpoint.md.max')}) {
+            text-align: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: ${theme('spacing.md')};
+            max-width: ${theme('size.xxs')};
+        }
         a {
             text-decoration: none;
             &:hover {
@@ -82,8 +96,11 @@ export const FooterNetworks = styled.div`
 `
 
 export const Copy = styled.div`
-    margin-top: ${theme('spacing.lg')};
+    padding-top: ${theme('spacing.lg')};
     font-size: ${theme('fontSize.xs')};
     text-align: center;
     color: ${palette('copyrightColor')};
+    @media (${theme('breakpoint.md.max')}) {
+        border-top: 1px solid ${palette('colorGrey88')};
+    }
 `

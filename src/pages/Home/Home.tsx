@@ -12,8 +12,8 @@ const Home = ({ currentExample }: HomeProps): JSX.Element => (
         <Hero />
         <Notices />
         <ShareHome />
-        <SharedPayments />
         <Form />
+        <SharedPayments />
         <HapuPrinciples />
         <ComingSoon />
     </>

@@ -6,7 +6,7 @@ import { HeroGrid, HeroWrapper } from './Hero.style'
 
 const Hero = ({ bgHero, imgHero, content }: HeroProps): JSX.Element => (
     <HeroWrapper bgImg={bgHero}>
-        <Container maxW={{ xs: 18, sm: 23, md: 40, lg: 48, xl: 70 }}>
+        <Container maxW={{ xs: 18, sm: 23, md: 40, lg: 50, xl: 65 }}>
             <HeroGrid>
                 <div>
                     {content && (

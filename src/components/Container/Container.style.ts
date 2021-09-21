@@ -15,31 +15,31 @@ export const ContainerWrapper = styled.div<ContainerProps>`
     ${({ maxW }: ContainerPropTypes) =>
         maxW
             ? css`
-                  @media (${theme('breakpoint.xs.max')}) {
-                      max-width: ${maxW.xs}rem;
-                  }
-                  @media (${theme('breakpoint.xs.min')}) and (${theme(
-                          'breakpoint.sm.max'
-                      )}) {
-                      max-width: ${maxW.sm}rem;
-                  }
-                  @media (${theme('breakpoint.sm.min')}) and (${theme(
-                          'breakpoint.md.max'
-                      )}) {
-                      max-width: ${maxW.md}rem;
-                  }
-                  @media (${theme('breakpoint.md.min')}) and (${theme(
-                          'breakpoint.lg.max'
-                      )}) {
-                      max-width: ${maxW.lg}rem;
+                  @media (${theme('breakpoint.xl.min')}) {
+                      max-width: ${maxW.xl}rem;
                   }
                   @media (${theme('breakpoint.lg.min')}) and (${theme(
                           'breakpoint.xl.max'
                       )}) {
                       max-width: ${maxW.xl}rem;
                   }
-                  @media (${theme('breakpoint.xl.min')}) {
-                      max-width: ${maxW.xl}rem;
+                  @media (${theme('breakpoint.md.min')}) and (${theme(
+                          'breakpoint.lg.max'
+                      )}) {
+                      max-width: ${maxW.lg}rem;
+                  }
+                  @media (${theme('breakpoint.sm.min')}) and (${theme(
+                          'breakpoint.md.max'
+                      )}) {
+                      max-width: ${maxW.md}rem;
+                  }
+                  @media (${theme('breakpoint.xs.min')}) and (${theme(
+                          'breakpoint.sm.max'
+                      )}) {
+                      max-width: ${maxW.sm}rem;
+                  }
+                  @media (${theme('breakpoint.xs.max')}) {
+                      max-width: ${maxW.xs}rem;
                   }
               `
             : css`

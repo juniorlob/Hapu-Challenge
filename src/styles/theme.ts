@@ -16,16 +16,21 @@ const theme = {
         sm: '.778rem',
         md: '.889rem',
         lg: '1rem',
+        xl: '1.375rem',
     },
     spacing: {
         xs: '.222rem',
         sm: '.444rem',
         md: '.889rem',
         lg: '1.333rem',
-
         xl: '1.778rem',
         xxl: '2.222rem',
+
+        '2lg': '2.5rem',
+        '2md': '1.5rem',
+        '2xl': '4rem',
         '2xxl': '4.875rem',
+        '3xxl': '6.667rem',
     },
     lineHeight: { md: '2rem', '2lg': '2.666rem' },
     shadow: {
@@ -51,6 +56,8 @@ const colors = {
 }
 
 const size = {
+    xxs: '14rem',
+    '2xs': '10rem',
     '2sm': '12rem',
     xs: '20rem',
     sm: '30rem',
@@ -104,10 +111,11 @@ const components = {
         display: 'block',
         backgroundColor: colors.grey['88'],
         height: '2px',
-        maxWidth: '43rem',
         width: '100%',
         margin: '0 auto',
-        padding: `0 ${theme.spacing.lg}`,
+    },
+    Input: {
+        height: '44px',
     },
 }
 
