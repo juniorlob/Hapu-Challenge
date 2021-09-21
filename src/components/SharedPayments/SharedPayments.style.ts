@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { theme } from 'styled-tools'
+import styled from 'styled-components';
+import { theme } from 'styled-tools';
 
 export const SharedPaymentsWrapper = styled.section`
     &:after {
@@ -29,4 +29,4 @@ export const SharedPaymentsWrapper = styled.section`
             padding: ${theme('spacing.2xl')} ${theme('spacing.md')};
         }
     }
-`
+`;

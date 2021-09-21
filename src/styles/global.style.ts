@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components'
-import { palette, theme } from 'styled-tools'
+import { createGlobalStyle } from 'styled-components';
+import { palette, theme } from 'styled-tools';
 
 const GlobalStyle = createGlobalStyle`
  
@@ -36,6 +36,6 @@ const GlobalStyle = createGlobalStyle`
 
   ${theme('components.globalStyle')}
   
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;

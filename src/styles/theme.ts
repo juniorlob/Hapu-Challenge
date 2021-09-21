@@ -1,4 +1,4 @@
-import { darken, transparentize } from 'polished'
+import { darken, transparentize } from 'polished';
 
 const theme = {
     fontFamily: "'Inter', sans-serif",
@@ -40,7 +40,7 @@ const theme = {
         sm: '.222rem',
     },
     transition: 'all 0.2s ease',
-}
+};
 
 const colors = {
     primary: '#00A870',
@@ -53,7 +53,7 @@ const colors = {
     },
     white: '#FFFFFF',
     warmWhite: '#FAF9F7',
-}
+};
 
 const size = {
     xxs: '14rem',
@@ -64,7 +64,7 @@ const size = {
     md: '48rem',
     lg: '62rem',
     xl: '80rem',
-}
+};
 
 const breakpoint = {
     xs: { min: `min-width: ${size.xs}`, max: `max-width: ${size.xs}` },
@@ -72,7 +72,7 @@ const breakpoint = {
     md: { min: `min-width: ${size.md}`, max: `max-width: ${size.md}` },
     lg: { min: `min-width: ${size.lg}`, max: `max-width: ${size.lg}` },
     xl: { min: `min-width: ${size.xl}`, max: `max-width: ${size.xl}` },
-}
+};
 
 const components = {
     globalStyle: {
@@ -117,7 +117,7 @@ const components = {
     Input: {
         height: '44px',
     },
-}
+};
 
 const lightTheme = {
     ...theme,
@@ -143,6 +143,6 @@ const lightTheme = {
     breakpoint,
     size,
     components,
-}
+};
 
-export default lightTheme
+export default lightTheme;
