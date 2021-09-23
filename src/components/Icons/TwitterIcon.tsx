@@ -3,6 +3,8 @@ import { Icon } from './Icons.styles';
 
 export const TwitterIcon = (p: IconProps): JSX.Element => (
     <Icon {...p} viewBox="0 0 19 14" xmlns="http://www.w3.org/2000/svg">
+        <title>Twitter</title>
+
         <path
             opacity="0.7"
             fillRule="evenodd"

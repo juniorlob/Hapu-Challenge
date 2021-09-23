@@ -3,6 +3,7 @@ import { Icon } from './Icons.styles';
 
 export const HapuLogo = (p: IconProps): JSX.Element => (
     <Icon {...p} viewBox="0 0 64 24" xmlns="http://www.w3.org/2000/svg">
+        <title>Hapu Logo</title>
         <path
             fillRule="evenodd"
             clipRule="evenodd"

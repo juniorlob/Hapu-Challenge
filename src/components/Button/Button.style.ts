@@ -23,6 +23,11 @@ export const ButtonEl = styled.button<ButtonProps>`
     )};
     transition: ${theme('transition')};
 
+    &:focus,
+    &[data-focus] {
+        box-shadow: ${palette('buttonFocus')};
+    }
+
     ${switchProp('size', {
         sm: css`
             height: ${ifProp('link', 'auto', '32px')};

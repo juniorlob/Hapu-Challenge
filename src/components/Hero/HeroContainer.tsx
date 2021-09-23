@@ -30,8 +30,6 @@ const HeroContainer = (): JSX.Element => {
     // In this moment the variant name is static
     const testName = 'heroTest';
 
-    const { env } = process;
-
     const mixPanelToken =
         process.env.REACT_APP_MIXPANEL_TOKEN !== undefined
             ? process.env.REACT_APP_MIXPANEL_TOKEN
@@ -53,7 +51,7 @@ const HeroContainer = (): JSX.Element => {
             variantAvg
         );
 
-        if (env.NODE_ENV === 'development') {
+        if (process.env.NODE_ENV === 'development') {
             experimentDebugger.enable();
         }
 

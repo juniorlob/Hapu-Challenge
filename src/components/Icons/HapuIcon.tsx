@@ -3,6 +3,8 @@ import { Icon } from './Icons.styles';
 
 export const HapuIcon = (p: IconProps): JSX.Element => (
     <Icon {...p} viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+        <title>Hapu icon</title>
+
         <path
             d="M20.5394 2.86608C21.3272 2.86608 21.9658 2.22448 21.9658 1.43304C21.9658 0.641593 21.3272 0 20.5394 0C19.7517 0 19.1131 0.641593 19.1131 1.43304C19.1131 2.22448 19.7517 2.86608 20.5394 2.86608Z"
             fill="currentColor"
