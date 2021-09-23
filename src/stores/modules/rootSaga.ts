@@ -1,6 +1,6 @@
 import { all } from 'redux-saga/effects';
 
-import news from './newspaper/sagas';
+import news from './newsletter/sagas';
 
 export default function* rootSaga() {
     yield all([news]);

@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 
-import storeNews from './newspaper/reducer';
+import storeNews from './newsletter/reducer';
 
 export default combineReducers({
     storeNews,

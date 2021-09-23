@@ -7,10 +7,10 @@ const Button = ({
     children,
     ...styleProps
 }: ComponentButtonProps): JSX.Element => {
-    const { onClick, ...linkProps } = styleProps;
+    const { btnColor, onClick, ...linkProps } = styleProps;
 
     return link && to && !onClick ? (
-        <BtnLink to={to} {...linkProps}>
+        <BtnLink color={btnColor} to={to} {...linkProps}>
             {children}
         </BtnLink>
     ) : (

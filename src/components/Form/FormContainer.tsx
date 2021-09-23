@@ -27,13 +27,11 @@ const FormContainer = ({
         success: false,
     };
 
-    // var result = arr.map(person => ({ value: person.id, text: person.name }));
-
     const initialFormData = inputFields.reduce(
         (ac, cur) => ({ ...ac, [cur.name]: '' }),
         {}
     );
-    // console.log(initialFormData);
+
     const [inputData, setData] = useState(initialFormData);
     const [status, setStatus] = useState(inititalStatus);
     const [loading, setLoading] = useState(false);
@@ -58,8 +56,7 @@ const FormContainer = ({
             setLoading(false);
         }
     }, [storeNews]);
-    // console.log(currentNews);
-    // console.log(status);
+
     const handleChangeFormData = (e: HTMLElementEvent<HTMLInputElement>) => {
         const { value, name } = e.target;
         const data = { ...inputData, [name]: value };
@@ -70,7 +67,6 @@ const FormContainer = ({
         setLoading(true);
         handleCreateNews(inputData);
     };
-    console.log({ status });
 
     return (
         <Form

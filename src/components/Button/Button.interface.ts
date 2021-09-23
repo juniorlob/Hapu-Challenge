@@ -15,7 +15,9 @@ export type LinkPropsTypes = {
     to?: LinkProps | string;
 };
 
-export type LinksProps = Omit<ButtonProps, 'onClick' & 'type'> &
-    Omit<LinkPropsTypes, 'link'>;
+export type LinksProps = Omit<ButtonProps, 'onClick' & 'type' & 'btnColor'> &
+    Omit<LinkPropsTypes, 'link'> & {
+        color?: Pick<ButtonProps, 'btnColor'>;
+    };
 
 export type ComponentButtonProps = LinkPropsTypes & ButtonProps;

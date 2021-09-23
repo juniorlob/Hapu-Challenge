@@ -54,6 +54,9 @@ export const Nav = styled.nav`
             }
         }
     }
+    a {
+        text-decoration: none;
+    }
 `;
 
 export const MainMenu = styled.ul<MainMenuProps>`

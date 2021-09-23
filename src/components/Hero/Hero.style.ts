@@ -53,7 +53,7 @@ export const HeroGrid = styled.div`
         text-align: center;
     }
 
-    & > div {
+    & > span {
         display: grid;
         grid-row-gap: ${theme('spacing.lg')};
         @media (${theme('breakpoint.sm.max')}) {

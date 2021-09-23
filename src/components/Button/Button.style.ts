@@ -82,8 +82,8 @@ export const BtnLink = styled(Link)<LinksProps>`
     cursor: pointer;
     text-decoration: underline;
     line-height: ${theme('spacing.2md')};
-    ${({ btnColor }) => css`
-        color: ${btnColor ? palette(btnColor) : 'secondary'};
+    ${({ color }) => css`
+        color: ${color ? palette(color) : 'secondary'};
     `}
 
     &:hover {

@@ -1,6 +1,11 @@
+import { ExperimentProps } from '@marvelapp/react-ab-test';
+import React from 'react';
+
 type heroInnerText = {
     title: string;
     text: string;
+    testName: string;
+    variantName: string;
 };
 type imgHero = {
     img: string;
@@ -12,12 +17,14 @@ export type BgHeroImg = {
     md?: string;
 };
 
-export interface BgHero extends BgHeroImg {
+export type BgHero = BgHeroImg & {
     bgImg?: BgHeroImg;
-}
+};
 
 export interface HeroProps {
     bgHero?: BgHero;
     imgHero?: imgHero;
-    content: heroInnerText;
+    content: Array<heroInnerText>;
+    ABConfig: Omit<ExperimentProps, 'children'>;
+    emitterWin?: (e: React.MouseEvent) => void;
 }

@@ -1,5 +1,5 @@
 import { bindActionCreators } from 'redux';
-import { createNewsRequest } from './modules/newspaper/actions';
+import { createNewsRequest } from './modules/newsletter/actions';
 
 const actions = {
     createNewsRequest,

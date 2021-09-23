@@ -5,10 +5,9 @@ import withConnect from '../../stores/withConnect';
 
 // Page jsx component
 import Home from './Home';
-// import { HomeContainerProps } from './Home.interface';
 
 const HomeContainer = ({ storeNews, createNewsRequest }: any): JSX.Element => {
-    const handleCreateNews = (data: any) => {
+    const handleCreateNews = (data: unknown) => {
         createNewsRequest(data);
     };
 
