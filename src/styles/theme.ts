@@ -53,9 +53,11 @@ const colors = {
     },
     white: '#FFFFFF',
     warmWhite: '#FAF9F7',
+    error: '#D40B2F',
 };
 
 const size = {
+    '2xxs': '8rem',
     xxs: '14rem',
     '2xs': '10rem',
     '2sm': '12rem',
@@ -139,6 +141,9 @@ const lightTheme = {
         borderIconsColor: colors.grey['88'],
         bgButtonSecondary: colors.secondary,
         copyrightColor: transparentize(0.4, colors.grey['24']),
+        inputError: colors.error,
+        inputSuccess: colors.primary,
+        spinnerColor: colors.white,
     },
     breakpoint,
     size,

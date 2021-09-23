@@ -5,14 +5,14 @@ import ShareHome from '../../components/ShareHome';
 import SharedPayments from '../../components/SharedPayments';
 import HapuPrinciples from '../../components/HapuPrinciples';
 import ComingSoon from '../../components/ComingSoon';
-import Form from '../../components/Form/Form';
+import Form from '../../components/Form';
 
-const Home = ({ currentExample }: HomeProps): JSX.Element => (
+const Home = ({ storeNews, handleCreateNews }: HomeProps): JSX.Element => (
     <>
         <Hero />
         <Notices />
         <ShareHome />
-        <Form />
+        <Form storeNews={storeNews} handleCreateNews={handleCreateNews} />
         <SharedPayments />
         <HapuPrinciples />
         <ComingSoon />

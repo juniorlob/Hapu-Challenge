@@ -1,8 +1,23 @@
 import Button from '../Button';
 import Container from '../Container';
-import { FormGrid, FormWraper } from './Form.style';
+import { FormTypeProps } from './Form.interface';
+import {
+    ButtonSubmit,
+    FormControl,
+    FormGrid,
+    FormWraper,
+    InputItem,
+    Spinner,
+} from './Form.style';
 
-const Form = (): JSX.Element => (
+const Form = ({
+    handleChange,
+    inputData,
+    handleSubmit,
+    inputFields,
+    status,
+    loading,
+}: FormTypeProps): JSX.Element => (
     <FormWraper>
         <div>
             <Container>
@@ -14,13 +29,41 @@ const Form = (): JSX.Element => (
                         Leave us your name and email and we’ll update you as
                         soon as a share becomes available in your area!
                     </p>
-                    <form action="">
-                        <input type="text" placeholder="Your name" />
-                        <input type="email" placeholder="Your email" />
-                        <Button size="md" type="submit">
-                            Send
-                        </Button>
-                    </form>
+                    <FormControl status={status}>
+                        {inputFields.map((iF, k) => (
+                            <InputItem status={status} key={k}>
+                                <input
+                                    name={iF.name}
+                                    value={iF.value || inputData[iF.name]}
+                                    onChange={handleChange}
+                                    type={iF.type}
+                                    required={iF.required}
+                                    placeholder={iF.placeholder}
+                                />
+
+                                <small>
+                                    {status.error && status.message[iF.name]}
+                                </small>
+                            </InputItem>
+                        ))}
+                        <small>
+                            {(status.success && status.message) ||
+                                (status.error && status.message.error)}
+                        </small>
+                        <ButtonSubmit
+                            type="button"
+                            size="md"
+                            onClick={handleSubmit}
+                        >
+                            {loading ? (
+                                <>
+                                    <Spinner isButton /> Loading
+                                </>
+                            ) : (
+                                'Send'
+                            )}
+                        </ButtonSubmit>
+                    </FormControl>
                 </FormGrid>
             </Container>
         </div>

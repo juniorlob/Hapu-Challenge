@@ -5,8 +5,7 @@ import rootReducer from './modules/rootReducer';
 import rootSaga from './modules/rootSaga';
 
 const sagaMiddleware = createSagaMiddleware();
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const enhancer = composeEnhancers(applyMiddleware(sagaMiddleware));
+const enhancer = compose(applyMiddleware(sagaMiddleware));
 const store = createStore(rootReducer, enhancer);
 sagaMiddleware.run(rootSaga);
 

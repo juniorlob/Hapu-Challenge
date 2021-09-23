@@ -1,19 +1,17 @@
 export interface HomeProps {
-    currentExample: string;
+    storeNews: any;
+    handleCreateNews: any;
 }
 
-export interface StoreExampleProps {
+export interface StoreNewsProps {
     loaded: boolean;
-    currentExample: string;
-    currentExamples?: Array<number | string>;
-    total: number;
-    pages: number;
+    currentNews: any;
     currentPage: 1;
     error: Record<string, unknown>;
     success: string;
 }
 
 export interface HomeContainerProps {
-    storeExample: StoreExampleProps;
-    exampleRequest: any;
+    storeNews: any;
+    createNewsRequest: any;
 }

@@ -1,17 +1,21 @@
-import { ReactNode } from 'react';
+import React from 'react';
 import { LinkProps } from 'react-router-dom';
 
-interface ButtonProps {
+export type ButtonProps = {
     size?: 'sm' | 'md' | 'lg';
     secondary?: boolean;
     type?: 'button' | 'reset' | 'submit';
     btnColor?: 'white' | 'secondary' | 'colorGrey24';
-    children: ReactNode;
-}
+    children: React.ReactNode;
+    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+};
 
-export interface LinksProps extends ButtonProps {
+export type LinkPropsTypes = {
     link?: true;
     to?: LinkProps | string;
-}
+};
 
-export type BtnComponentProps = ButtonProps & LinksProps;
+export type LinksProps = Omit<ButtonProps, 'onClick' & 'type'> &
+    Omit<LinkPropsTypes, 'link'>;
+
+export type ComponentButtonProps = LinkPropsTypes & ButtonProps;

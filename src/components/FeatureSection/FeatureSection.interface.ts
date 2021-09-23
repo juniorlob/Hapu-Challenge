@@ -11,7 +11,7 @@ type sectionImgProps = {
 export interface FeatureContainerProps {
     title: string;
     paragraph: string;
-    cta: ctaProps;
+    cta?: ctaProps;
     img?: sectionImgProps;
     imgOrder?: number;
     columns?: number;

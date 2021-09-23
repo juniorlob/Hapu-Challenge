@@ -24,9 +24,11 @@ const FeatureSection = ({
                 <ReactMarkdown components={{ p: 'h2' }}>{title}</ReactMarkdown>
 
                 <ReactMarkdown>{paragraph}</ReactMarkdown>
-                <FeatureSectionBtn columns={columns} link to={cta.link}>
-                    {cta.text}
-                </FeatureSectionBtn>
+                {cta && (
+                    <FeatureSectionBtn columns={columns} link to={cta.link}>
+                        {cta.text}
+                    </FeatureSectionBtn>
+                )}
             </div>
             {img && <img src={img.url} alt={img.alt} />}
         </FeatureSectionWrapper>

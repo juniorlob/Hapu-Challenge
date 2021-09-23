@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 
-import storeExample from './example/reducer';
+import storeNews from './newspaper/reducer';
 
 export default combineReducers({
-    storeExample,
+    storeNews,
 });

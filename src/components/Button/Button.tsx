@@ -1,18 +1,20 @@
-import { BtnComponentProps } from './Button.interface';
+import { ComponentButtonProps } from './Button.interface';
 import { BtnLink, ButtonEl } from './Button.style';
 
 const Button = ({
     link,
     to,
     children,
-    ...props
-}: BtnComponentProps): JSX.Element =>
-    link && to ? (
-        <BtnLink to={to} {...props}>
+    ...styleProps
+}: ComponentButtonProps): JSX.Element => {
+    const { onClick, ...linkProps } = styleProps;
+
+    return link && to && !onClick ? (
+        <BtnLink to={to} {...linkProps}>
             {children}
         </BtnLink>
     ) : (
-        <ButtonEl {...props}>{children}</ButtonEl>
+        <ButtonEl {...styleProps}>{children}</ButtonEl>
     );
-
+};
 export default Button;
