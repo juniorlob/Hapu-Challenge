@@ -30,12 +30,13 @@ For a/b tests, the mix panel service was used, but the available structure can b
 Enviroment variable is required
 
 ```js
-REACT_APP_MIXPANEL_TOKEN
+REACT_APP_MIXPANEL_TOKEN;
 ```
 
+you can use a variable below
 
 ```js
-REACT_APP_MIXPANEL_TOKEN=b9eec9d315c9fcc93bfcce5b7865f9f7
+REACT_APP_MIXPANEL_TOKEN = b9eec9d315c9fcc93bfcce5b7865f9f7;
 ```
 
 ## Available Scripts
