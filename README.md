@@ -27,7 +27,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 For a/b tests, the mix panel service was used, but the available structure can be conveniently integrated with other services
 
-Enviroment is required
+Enviroment variable is required
 
 ```js
 REACT_APP_MIXPANEL_TOKEN
