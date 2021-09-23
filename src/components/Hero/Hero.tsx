@@ -19,7 +19,7 @@ const Hero = ({
                     {content.map((c, k) => (
                         <Variant key={k} name={c.variantName}>
                             <h1>{c.title}</h1>
-                            <h5>{c.text}</h5>
+                            <p>{c.text}</p>
                             <a href="#" onClick={emitterWin}>
                                 <PlayIcon h={48} w="auto" color="primary" />
                                 See hapu in action (27 seconds)

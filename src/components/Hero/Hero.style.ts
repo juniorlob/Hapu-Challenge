@@ -70,7 +70,7 @@ export const HeroGrid = styled.div`
                 line-height: ${theme('lineHeight.md')};
             }
         }
-        h5 {
+        p {
             font-size: ${theme('fontSize.title.lg')};
             line-height: 24px;
             font-weight: 400;
