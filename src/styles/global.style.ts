@@ -34,6 +34,10 @@ const GlobalStyle = createGlobalStyle`
     
   }
 
+  a{
+      color:${palette('secondary')}
+    }
+
   ${theme('components.globalStyle')}
   
 `;
