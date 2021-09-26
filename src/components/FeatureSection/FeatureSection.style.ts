@@ -38,6 +38,20 @@ export const FeatureSectionWrapper = styled.div<FeaturesStyleProps>`
             }
         `
     )}
+
+    img {
+        ${({ imgVisibility }: Pick<FeaturesStyleProps, 'imgVisibility'>) =>
+            imgVisibility && imgVisibility?.length > 0
+                ? imgVisibility.map(
+                      (iV: string) => css`
+                          @media (${theme(`breakpoint.${iV}.max`)}) {
+                              display: none;
+                          }
+                      `
+                  )
+                : null}
+    }
+
     @media (${theme('breakpoint.md.max')}) {
         div {
             order: 2;

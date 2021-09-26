@@ -10,7 +10,11 @@ const HapuPrinciples = (): JSX.Element => {
             text: 'Read how Hapu’s tribal background defines our app ',
             link: '#',
         },
-        img: { url: '/billing-history.png', alt: '' },
+        img: {
+            url: '/billing-history.png',
+            alt: '',
+            hideOn: ['md'],
+        },
     };
 
     return (

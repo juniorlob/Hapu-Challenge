@@ -13,26 +13,32 @@ const FeatureSection = ({
     img,
     imgOrder,
     columns,
-}: FeaturesSectionProps): JSX.Element => (
-    <Container maxW={{ xs: 18, sm: 25, md: 40, lg: 47, xl: 55 }}>
-        <FeatureSectionWrapper
-            columns={columns}
-            imgOrder={imgOrder}
-            hasImg={img !== undefined}
-        >
-            <div>
-                <ReactMarkdown components={{ p: 'h2' }}>{title}</ReactMarkdown>
+}: FeaturesSectionProps): JSX.Element => {
+    console.log(img);
+    return (
+        <Container maxW={{ xs: 18, sm: 25, md: 40, lg: 47, xl: 55 }}>
+            <FeatureSectionWrapper
+                columns={columns}
+                imgOrder={imgOrder}
+                hasImg={img !== undefined}
+                imgVisibility={(img && img.hideOn) || undefined}
+            >
+                <div>
+                    <ReactMarkdown components={{ p: 'h2' }}>
+                        {title}
+                    </ReactMarkdown>
 
-                <ReactMarkdown>{paragraph}</ReactMarkdown>
-                {cta && (
-                    <FeatureSectionBtn columns={columns} link to={cta.link}>
-                        {cta.text}
-                    </FeatureSectionBtn>
-                )}
-            </div>
-            {img && <img src={img.url} alt={img.alt} />}
-        </FeatureSectionWrapper>
-    </Container>
-);
+                    <ReactMarkdown>{paragraph}</ReactMarkdown>
+                    {cta && (
+                        <FeatureSectionBtn columns={columns} link to={cta.link}>
+                            {cta.text}
+                        </FeatureSectionBtn>
+                    )}
+                </div>
+                {img && <img src={img.url} alt={img.alt} />}
+            </FeatureSectionWrapper>
+        </Container>
+    );
+};
 
 export default FeatureSection;

@@ -6,6 +6,7 @@ type ctaProps = {
 type sectionImgProps = {
     url: string;
     alt: string;
+    hideOn?: Array<string>;
 };
 
 export interface FeatureContainerProps {
@@ -20,6 +21,7 @@ export interface FeatureContainerProps {
 export type FeaturesSectionProps = FeatureContainerProps;
 
 export type FeaturesStyleProps = {
+    imgVisibility?: Array<string>;
     hasImg?: boolean;
     imgOrder?: number;
     columns?: number;
