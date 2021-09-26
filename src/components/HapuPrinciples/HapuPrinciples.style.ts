@@ -21,7 +21,6 @@ export const HapuPrinciplesWrapper = styled.section`
             max-width: ${theme('size.2xs')};
         }
     }
-    padding: ${theme('spacing.2xl')} 0;
 
     > div {
         text-align: center;
