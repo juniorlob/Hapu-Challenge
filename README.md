@@ -4,20 +4,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Description
 
-**Challenge goal**: The purpose of this challenge is to give a general idea of how React works and how you can use it to create simple reactive applications. You’ll be implementing a simplified version of Hapu’s ‘Become a Nanny Share Host’ view. The concepts that you’re gonna apply are:
+**Challenge goal**: The aim of this challenge is to give a general idea of how React works and how you can use it to create simple responsive applications. You'll be implementing a simplified version of Hapu’s ‘Become a Nanny Share Host’ view. The elements that you will apply include:
 
--   JSX;
--   Components, props and state;
--   Lifecycle Methods;
--   Responsive design with CSS media-queries;
--   API calls;
--   Error handling;
--   Loading states;
--   SEO & accessibility;
--   A/B tests;
--   Production builds.
+-   JSX
+-   Components, props, and state
+-   Lifecycle Methods
+-   Responsive design with CSS media-queries
+-   API calls
+-   Error handling
+-   Loading states
+-   SEO & accessibility
+-   A/B tests
+-   Production builds
 
-**Final accomplishment**: By the end of this challenge you'll have a production ready build.
+**Final accomplishment**: By the end of this challenge, you'll have a production-ready build.
 
 ## Resources
 
@@ -25,23 +25,23 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## A/B tests
 
-For a/b tests, the mix panel service was used, but the available structure can be conveniently integrated with other services
+Mix panel service has been used for a/b tests, but the existing structure can be conveniently integrated with other services.
 
-Enviroment variable is required
+It is required to have an environment variable:
 
-```js
+```javascript
 REACT_APP_MIXPANEL_TOKEN;
 ```
 
-you can use a variable below
+The variable below can be used:
 
-```js
+```javascript
 REACT_APP_MIXPANEL_TOKEN = b9eec9d315c9fcc93bfcce5b7865f9f7;
 ```
 
 ## Available Scripts
 
-### After clone repository with
+### After cloning the repository with
 
 ```bash
 git clone git@github.com:juniorlob/Hapu-Challenge.git
@@ -53,43 +53,75 @@ In the project directory, you can run:
  yarn start
 ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This runs the app in development mode. To view it in the browser, open [http://localhost:3000](http://localhost:3000).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The page will reload if you make edits and you will also see any lint errors in the console.
 
 ```bash
 yarn build
 ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This command builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The build is minified and the filenames include the hashes. Your app is ready to be deployed!
 
 ## 🧐 What's inside?
 
-A quick look at the important libraries used in this project.
+A quick look at the top libraries used in this standout project.
 
--   ReactJs
+-   ReactJS
 -   Redux
 -   Redux Saga
 -   Axios
--   Typescript
+-   TypeScript
 -   Styled components
 -   Eslint
 
 ## Challenge requirements
 
-&#9745; Components, props and state;\
-&#9745; Lifecycle Methods;\
-&#9745; Responsive design with CSS media-queries;\
-&#9745; API calls;\
-&#9745; Error handling;\
-&#9745; Loading states;\
-&#9745; SEO & accessibility;\
-&#9745; A/B tests;\
-&#9745; Production builds;\
-&#9745; Have a build ready for production.
+✅ Components, props, and state\
+✅ Lifecycle Methods\
+✅ Responsive design with CSS media-queries\
+✅ API calls\
+✅ Error handling\
+✅ Loading states\
+✅ SEO & accessibility\
+✅ A/B tests\
+✅ Production builds\
+✅ Have a build ready for production.
+
+## Dependencies
+
+The project uses these dependencies:
+
+```json
+{
+  "dependencies": {
+    "@marvelapp/react-ab-test": "^3.1.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/remote-redux-devtools": "^0.5.5",
+    "axios": "^0.21.4",
+    "dotenv": "^10.0.0",
+    "eslint-plugin-json": "^3.1.0",
+    "immer": "^9.0.6",
+    "jest-styled-components": "^7.0.5",
+    "mixpanel": "^0.13.0",
+    "polished": "^4.1.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-markdown": "^7.0.1",
+    "react-redux": "^7.2.5",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "4.0.3",
+    "redux": "^4.1.1",
+    "redux-saga": "^1.1.3",
+    "remove": "^0.1.5",
+    "styled-components": "^5.3.1",
+    "styled-tools": "^1.7.2",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
+  }
+}
+```
